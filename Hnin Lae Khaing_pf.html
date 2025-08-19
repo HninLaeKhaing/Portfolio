@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hnin Lae Khaing Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #fce4ec);
+      color: #333;
+    }
+    nav {
+      background: #673ab7;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    nav h1 { margin: 0; font-size: 1.5rem; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      border-left: 5px solid #673ab7;
+      padding-left: 1rem;
+      color: #3f3f3f;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      border-left: 5px solid #673ab7;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .tag {
+      display: inline-block;
+      background: #e1bee7;
+      color: #4a148c;
+      padding: 0.3rem 0.7rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Hnin Lae Khaing</h1>
+  <ul>
+    <li><a href="#intro">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#internship">Internships</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+</nav>
+
+<section id="intro">
+  <h2>👋 Introduction & Aspiration</h2>
+  <div class="card">
+    <p>Hello! I am <strong>Hnin Lae Khaing</strong>, an enthusiastic undergraduate student in Computer Science and Engineering.</p>
+    <p>I am passionate about technology, innovation, problem-solving and digital design creation.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact</h2>
+  <div class="card">
+    <p><strong>Phone:</strong> +91 8527722843</p>
+    <p><strong>Email:</strong> <a href="mailto:hlaekhine@gmail.com">hlaekhine@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hnin-lae-khaing-181hlk2003" target="_blank">View Profile</a></p>
+    <p><strong>Address:</strong> Manav Rachna Campus Girl Hostel, Faridabad, India</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>🎓 Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Manav Rachna University</h3>
+      <p>B.Tech in Computer Science and Engineering (2024–2025)</p>
+    </div>
+    <div class="card">
+      <h3>Secondary Education: No (1) Basic Education High School</h3>
+      <p>Mathematics Subject Distinction (2017–2019)</p>
+    </div>
+  </div>
+</section>
+
+<section id="internship">
+  <h2>💼 Internships & Volunteering</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Founder & PM – BTH Non-Profit</h3>
+      <p>Management & Design</p>
+    </div>
+    <div class="card">
+      <h3>Virtual Intern – VISA (Forage)</h3>
+      <p>Token Service Technology – Jan 2023</p>
+    </div>
+    <div class="card">
+      <h3>Virtual Intern – Citi (Forage)</h3>
+      <p>Investment Banking – Jan to Feb 2023</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>💡 Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Team Piano</h3>
+      <p>Arduino-based mini piano project converting key presses into musical tones using buzzers and tone libraries. An engaging educational tool for learning electronics and sound programming.</p>
+    </div>
+    <div class="card">
+      <h3>Virtual Study Assistant</h3>
+      <p>A Python application to manage study schedules, motivate users with quotes, and help students stay productive. Includes session management and future plans for smart reminders.</p>
+    </div>
+     <div class="card">
+      <h3>Sucidal behaviour in Adolescent Data analysis Visualization</h3>
+      <p>Database Visualization in Graph and Chat bot design Creation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>📜 Certificates</h2>
+  <div class="grid">
+    <div class="card">IELTS – International English Language Test</div>
+    <div class="card">MicroLearnable – First Step in Coding</div>
+    <div class="card">Handong UNESCO – Programming Course</div>
+    <div class="card">SAP Build Apps & Analytics Training</div>
+    <div class="card">Simbolo – Python & AI Foundation</div>
+    <div class="card">HR Management Foundation Class</div>
+    <div class="card">Arduino Hands-on – Udemy</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>🛠 Skills & Languages</h2>
+  <div class="card">
+    <h3>Languages</h3>
+    <div class="tag">English</div>
+    <div class="tag">Burmese</div>
+    <div class="tag">German</div>
+    <h3 style="margin-top: 1rem;">Soft Skills</h3>
+    <div class="tag">Organized</div>
+    <div class="tag">Communication</div>
+    <div class="tag">Teamwork</div>
+    <div class="tag">Critical Thinking</div>
+    <div class="tag">Meeting Deadlines</div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Hnin Lae Khaing | Designed with 💜
+</footer>
+
+</body>
+</html>
